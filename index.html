@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Форма обратной связи</h1>
+        </div>
+        
+        <form action="" class="formCallBack">
+            <div class="formCallBack__row">
+                <div class="formCallBack__title">
+                    <h1>Заполните форму и мы перезвоним <br\>Вам через пять минут!</h1>
+                </div>
+                <div class="formCallBack__input name">
+                    <input type="text" class="nameInput" placeholder="Ваше имя" minlength="4" maxlength="15" required>
+                </div>
+                <div class="formCallBack__input phone">
+                    <input type="text" class="phoneInput" minlength="13" maxlength="13" placeholder="Ваш телефон" required>
+                </div>
+                <div class="formCallBack__input mail">
+                    <input type="text" class="mailInput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваша почта" required>
+                </div>
+
+                <button type="submit" class="formCallBack__sendBtn">Перезвоните мне!</button>
+            </div>
+        </form>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
